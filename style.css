@@ -1,0 +1,132 @@
+
+:root {
+    /*Primary colors*/
+    --bright-orange:  hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    /*Neutral colors*/
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray:  hsl(0, 0%, 95%);
+}
+
+html{
+    font-size: 62.5%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    flex-flow: column;
+    font-family: 'Lexend Deca', sans-serif;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    min-width: 100vh;
+    line-height: 1.5;
+}
+
+h2 {
+    color: var(--very-light-gray);
+    font-size: 3.5rem;
+    padding-top: 3rem;
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+pre {
+    color: var(--transparent-white);
+    font-size: 1.5rem;
+    padding: 3rem 0;
+}
+
+.content {
+    background-color: var(--very-light-gray);
+    width: 100rem;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 7rem 7rem 4rem 7rem; 
+
+}
+
+.column {
+    width: 100%;
+    padding: 3rem;
+}
+
+.one {
+    background-color: var(--bright-orange);
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.two{
+    background-color: var(--dark-cyan);
+}
+
+.three {
+    background-color: var(--very-dark-cyan);
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+button {
+    font-size: 1.5rem;
+    background-color: var(--very-light-gray);
+    border: none;
+    padding: 1.5rem 2rem;
+    border: 0.5rem solid var(--very-light-gray);
+    border-radius: 2.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover{
+    background: none;
+    color: var(--very-light-gray);
+}
+
+.b1{
+    color: var(--bright-orange);
+}
+
+.b2{
+    color: var(--dark-cyan);
+}
+
+.b3{
+    color: var(--very-dark-cyan);
+}
+.attribution { 
+    font-size: 11px;
+    text-align: center; 
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+ }
+
+@media (max-width:600px){
+    .content {
+        flex-flow: column nowrap;
+        width: 30rem;
+        padding: 0;
+    }
+
+    .one {
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 1rem;
+    }
+
+    .three {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 1rem;
+    }
+}
